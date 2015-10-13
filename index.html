@@ -3,9 +3,6 @@
     <meta charset="utf-8">
     <title>Русская документация по SailsJS. Страница Getting Started</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-
-
-
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top dark-blue">
@@ -77,11 +74,110 @@
           </div>
 Проще говоря, Node.js предоставляет нам возможность быстро и эффективно запускать JavaScript код вне браузера, делая его доступным для использования его в качестве языка как для фронтенда, так и для бекенда.
         </p>
+        <h3>Какая ОС мне нужна?</h3>
+        <p>
+            Node.js может быть установлена на большинство основых операционных систем. Поддерживается MacOSX, множество версий Linux и Windows.<br>
+            Теперь взгляните какую ОС вы имеете. Пожалуйста выберите инструкцию по установке Node.js из следующих: <br>
+            <ol>
+              <li>У меня <a href="#">Mac OSX</a></li>
+              <li>У меня <a href="#">Linux</a></li>
+              <li>У меня <a href="#">Windows</a></li>
+            </ol>
+        </p>
+        <h3>Установка OSX</h3>
+        <p>
+          Используя <a href="http://nodejs.org/download/">package</a>:
+          <i>Simply <a href="http://nodejs.org/download/">download Macintosh Installer.</a></i>
+          Используя <a href="https://github.com/mxcl/homebrew">homebrew</a>:
+          <div class="well">
+              brew install node
+          </div>
+          Используя <a href="http://www.macports.org/">macports</a>:
+          <div class="well">
+              port install nodejs
+          </div>
+        </p><br>
+        <h3>Установка на Linux</h3>
+        <p>
+          <h3>Ubuntu, Mint</h3>
+          Пример установки:
+          <div class="well">
+            sudo apt-get install python-software-properties python g++ make
+            sudo add-apt-repository ppa:chris-lea/node.js
+            sudo apt-get update
+            sudo apt-get install nodejs
+          </div>
+          Он устанавливается на текущую стабильную версию Ubuntu. Пользователям Quantal (12.10) может потребоваться установка пакета software-properties-common для работы команды add-apt-repository: sudo apt-get install software-properties-common
+          Что касается Node.js v0.10.0, пакет nodejs из репозитория Криса Леа (Chris Lea) включая как npm так и nodejs-dev.
+          Это конфликт имен с пакетом node (Amateur Packet Radio Node Program), и бинарник nodejs был переименован с node на nodejs. Вам потребуется изменить символическую ссылку /usr/bin/node на /usr/bin/nodejs или вам нужно удалить Amateur Packet Radio Node Program для избежания конфликта.
+        </p>
+        <h3>Fedora</h3>
+        <p>
+          Node.js и npm доступны на Fedora 18 и старше. Только используйте ваш любимый графический пакетный менеджер для запуска или запустите это в терминале для установки и npm и node:
+          <div class="well">
+            sudo yum install npm
+          </div>
+        </p>
+        <h3>RHEL/CentOS/Scientific Linux 6</h3>
+        <p>
+          Node.js и npm доступны из тестовых репозиториев Fedora Extra Packages для Enterprise Linux (EPEL). Если вы этого еще не сделали, во-первых <a href="https://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F">включите EPEL</a> и затем запустите следующую команду для установки node и npm:
+          <div class="well">
+            su -c 'yum --enablerepo=epel-testing install npm'
+          </div>
+        </p>
+        <h3>Arch Linux</h3>
+        <p>
+          Node.js доступен в the Community Repository.
+          <div class="well">
+            pacman -S nodejs
+          </div>
+        </p>
+        <h3>Gentoo</h3>
+        <p>
+          Node.js доступен в официальном дереве портирования. Вы должны демаскировать его.
+          <div class="well">
+            # emerge -aqv --autounmask-write nodejs
+            # etc-update
+            # emerge -aqv nodejs
+          </div>
+        </p>
+        <h3>Debian, LMDE</h3>
+        <p>
+          Для Debian sid (нестабильной), Node.js доступен в официальном репозитории.
+          Для Debian Wheezy (стабильной), Node.js доступен в wheezy-backports. Для установки бэкпортов,  добавьте в ваш sources.list (/etc/apt/sources.list):
+          <div class="well">
+            deb http://YOURMIRROR.debian.org/debian wheezy-backports main
+          </div>
+          Затем запустите:
+          <div class="well">
+            apt-get update
+            apt-get install nodejs
+          </div>
+          Для Debian Squeeze (старой стабильной), будет лучше всего компилировать node самостоятельно (от root'а):
+          <div class="well">
+            apt-get install python g++ make
+            mkdir ~/nodejs && cd $_
+            wget -N http://nodejs.org/dist/node-latest.tar.gz
+            tar xzvf node-latest.tar.gz && cd `ls -rd node-v*`
+            ./configure
+            make install
+          </div>
+        </p>
+        <h3>openSUSE & SLE</h3>
+        <p>
+          <a href="https://build.opensuse.org/package/show?package=nodejs&project=devel%3Alanguages%3Anodejs">Список стабильных репозиториев Node.js.</a> Также node.js доступен в  openSUSE:Factory repository.<br>
+          Доступны RPM пакеты для: openSUSE 11.4, 12.1, Factory и Tumbleweed; SLE 11 (с вариациями SP1 и SP2).
+          Пример установки на openSUSE 12.1:
+          <div class="well">
+            sudo zypper ar http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_12.1/ NodeJSBuildService
+            sudo zypper in nodejs nodejs-devel
+          </div>
+        </p>
     </div>
   </div>
 </div>
 
-
+<div class="container">
 <!--Подвал начало-->
 <div class="row dark-blue">
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
