@@ -173,6 +173,42 @@
             sudo zypper in nodejs nodejs-devel
           </div>
         </p>
+        <h3>FreeBSD и OpenBSD</h3>
+        <p>
+          Node.js доступен с помощью портирования системы.
+          <div class="well">
+            /usr/ports/www/node
+          </div>
+          Версия dev доступна при помощи использования портов:
+          <div class="well">
+            cd /usr/ports/www/node-devel/ && make install clean
+          </div>
+          или пакетов на FreeBSD
+          <div class="well">
+            pkg_add -r node-devel
+          </div>
+          NPM не устанавливается вместе с Node.js по умолчанию на FreeBSD и может потребоваться для разработки и установки зависимостей.
+          <div class="well">
+            /usr/ports/www/npm
+          </div>
+          Также обратите внимание, что FreeBSD 10 использую clang будет конфликт со случайным скриптом сборки (которая предполагает gcc) с помощью node-gyp и эта проблема может быть решена установкой envvar.
+          <div class="well">
+            CXX=c++
+          </div>
+        </p>
+        <h3>Установка на Windows</h3>
+        <p>
+        используя <a href="http://nodejs.org/download/">пакет</a>:
+        Проще: <a href="http://nodejs.org/download/">Скачать инсталлятор на Windows</a>
+        Используя <a href="http://chocolatey.org/">chocolatey</a> to install <a href="http://chocolatey.org/packages/nodejs">Node</a>:
+        <div class="">
+          cinst nodejs
+        </div>
+        Или полная установка через NPM:
+        <div class="well">
+          cinst nodejs.install
+        </div>
+        </p>
     </div>
   </div>
 </div>
