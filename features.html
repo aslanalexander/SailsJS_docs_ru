@@ -1,0 +1,141 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Русская документация по SailsJS. Страница Getting Started</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top dark-blue">
+      <div class="container center-block">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">SailsJS_RU</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Начало работы</a></li>
+            <li><a href="#">Особенности</a></li>
+            <li><a href="#">Документация</a></li>
+            <li><a href="mailto:asl174@yandex.ru">Напишите мне</a></li>
+          </ul>
+          <!--<ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+          </ul>-->
+        </div><!-- /.navbar-collapse -->
+     </div>
+    </nav>
+<div class="row">
+  <div class="col-sm-12">
+    <h1>&nbsp;</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 well">
+      <h1>Возьмите столько, сколько нужно</h1>
+        <h4><i>Sails это легковесный фреймворк, который основывается на лучшем из <a href="https://github.com/expressjs">Express</a>. Это ансамбль маленьких модулей работающих вместе для предоставления простых, ремонтопригодных, и структурированных конвенций для Node.js приложений.</i></h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 well">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="img/icon_js_large.png" alt="" />
+        </div>
+        <div class="col-sm-10">
+          <h3>100% JavaScript.</h3>
+          <p>
+            Как и другие MVC фреймворки, Sails построен с акцентом на удобстве разработчика и философии соглашения по конфигурации(convention-over-configuration). Но Node.js перевел этот принцип на следующий уровень. Построенный на лучшем из Sails означает, что ваше приложение написано полностью на JavaScript, языке уже используемом вами и вашей командой в браузере. С этого момента вы будете тратить меньше времени на переключение между контекстами, вы можете писать код в более согласованном стиле, который делает разработку более продуктивной и легкой.
+          </p>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="img/icon_database_large.png" alt="" />
+        </div>
+        <div class="col-sm-10">
+          <h3>Любая база данных</h3>
+          <p>
+            Sails имеет мощную ORM, Waterline, который предоставляет простой доступ к слою данных, который только работает, не важно, какая база данных вами используется. В дополнение к множеству проектов сообщества, официально поддерживаются адаптеры для MySQL, MongoDB, PostgreSQL, Redis, и локального диска.
+          </p>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="img/icon_associations_large.png" alt="" />
+        </div>
+        <div class="col-sm-10">
+          <h3>Мощные объединения.</h3>
+          <p>
+            Sails предлагает новый подход к привычной модели отношений, направленный на более практичное создание моделей данных. Вы можете делать все те же самые вещи могущие быть использованными (один ко многим, многие ко многим), но вы также можете назначить несколько именованных объединений за модель (например в случае, "cake" может иметь две коллекции "havers" и "eaters"). Еще лучше, вы можете назначать различные модели различным базам данных, и ваши associations/joins продолжат работать как в границах NoSQL, так и за его пределами. Sails не имеет проблем implicitly/automatically соединения таблицы MySQL с коллекцией Mongo и наоборот.
+          </p>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="img/icon_api_large.png" alt="" />
+        </div>
+        <div class="col-sm-10">
+          <h3>Авто-генерация REST APIs.</h3>
+          <p>
+            Sails поставляется с blueprint'ами, помогающими стартануть вашему бекенду без написания какого-либо кода. Просто запустите команду: <span class="label label-info">sails generate api dentist</span> и вы получите API, который предоставляет вам поиск, разбиение на страницы, сортировку, фильтрацию, создание, уничтожение, обновление и связь окончаний (associate dentists). Поскольку эти <i>blueprint actions</i> основаны на тех же самых базовых технологиях что и Sails, они также работают с Websocket'ами и другими поддерживаемыми СУБД.
+          </p>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<!--Подвал начало-->
+<div class="row dark-blue">
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <p class="whited">
+      <a href="http://sailsjs.org/">SailsJS</a>
+      <p>Все права принадлежат разработчикам. Переводчик не несет ответственности за содержание документации и предоставляет ее как есть.</p>
+    </p>
+    <hr>
+    <p class="whited">
+      <ul>
+        <li class="active"><a href="#">Начало работы</a></li>
+        <li><a href="#">Особенности</a></li>
+        <li><a href="#">Документация</a></li>
+        <li><a href="mailto:asl174@yandex.ru">Напишите мне</a></li>
+      </ul>
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <p class="whited">
+
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  </div>
+</div>
+<!--Подвал конец-->
+</div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
