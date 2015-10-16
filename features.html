@@ -22,8 +22,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Начало работы</a></li>
-            <li><a href="#">Особенности</a></li>
-            <li><a href="#">Документация</a></li>
+            <li><a href="features.html">Особенности</a></li>
+            <li><a href="concepts.html">Документация</a></li>
             <li><a href="mailto:asl174@yandex.ru">Напишите мне</a></li>
           </ul>
           <!--<ul class="nav navbar-nav navbar-right">
@@ -125,7 +125,34 @@
         <div class="col-sm-10">
           <h3>Непознаваемый фронт-энд</h3>
           <p>
-            While the promise of "one language/framework to rule them all" is certainly enticing, it <a href="http://bit.ly/be-dev-agnostic">isn't always realistic</a>. Sails is compatible with any front-end strategy; whether it's Angular, Backbone, iOS/ObjC, Android/Java, Windows Phone, or something else that hasn't been invented yet. Plus it's easy to serve up the same API to be consumed by another web service or community of developers.
+            Конечно обещания о том, что "один язык/фреймворк для управления всем" звучит заманчиво, это <a href="http://bit.ly/be-dev-agnostic">не всегда реалистично</a>. Sails совместим с любой фронт-енд стратегией; будет ли это Angular, Backbone, iOS/ObjC, Android/Java, Windows Phone, или что-нибудь еще, что может быть изобретено. Плюс им просто обслуживать тот же API для отдачи другим веб-сервисам или сообществу разработчиков.
+          </p>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="img/icon_asset_large.png" alt="" />
+        </div>
+        <div class="col-sm-10">
+          <h3>Гибкое встраивание дополнений</h3>
+          <p>
+            Если вы делаете приложение для браузера, вам повезло. Sails поставляется с Grunt - который дает вам целый набор полностью изменяемымх рабочих дополнений, и поставляется с поддержкой уже всех модулей Grunt, который там уже есть. Есть поддержка для LESS, SASS, Stylus, CoffeeScript, JST, Jade, Handlebars, Dust, и многого другого. Когда вы готовы отправить в продакшен (выставить приложение "на боевую"), ваши дополнения минифицируются и сжимаются (gzip) автоматически. Вы всегда можете компилировать ваше статическое дополнение и поместить его в CDN, такой как CloudFront для ускорения загрузки вашего приложения.
+          </p>
+          <p>
+            Предпочитаете Gulp? Проверьте <a href="https://github.com/PaulAvery/sails-generate-gulp-bower">community generator</a> от <a href="https://github.com/PaulAvery">@PaulAvery</a>.
+          </p>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="img/icon_foundation_large.png" alt="" />
+        </div>
+        <div class="col-sm-10">
+          <h3>Надежное основание</h3>
+          <p>
+            Sails основан на <a href="http://nodejs.org/">Node.js</a>, - популярной, легковесной серверной технологии, которая помогает разработчикам писать невероятно быстрые, расширяемые сетевые приложения на Javascript. Sails использует Express для обработки HTTP запросов и обертывает socket.io для управления WebSocket'ами. Если вашему приложению нужно быть  низкоуровневым, вы можете взять оригинальные объекты Express или socket.io. Другая классная особенность, это то, что существующие пути Express отлично работают в приложениях Sails, потому миграция существующих приложений Node будет легкой.
           </p>
         </div>
       </div>
